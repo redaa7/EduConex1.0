@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Título de la asignatura -->
+    <TextView
+        android:id="@+id/textViewAsignatura"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textViewNotas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notas"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/textViewAsignatura"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+
+    <!-- Tabla de notas -->
+    <TableLayout
+        android:id="@+id/tableLayoutNotas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAsignatura"
+        android:layout_marginTop="16dp">
+
+        <!-- Encabezados de la tabla -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="1er Evaluación"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="2º Evaluación"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Ordinaria"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text="Extraordinaria"
+                android:textStyle="bold"/>
+        </TableRow>
+
+        <!-- Contenido de la tabla (puedes agregar más filas según sea necesario) -->
+        <TableRow>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text=""
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text=""
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text=""
+                android:textStyle="italic"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="8dp"
+                android:text=""
+                android:textStyle="italic"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>

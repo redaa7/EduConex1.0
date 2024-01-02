@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Otros recursos aquí -->
+
+    <string name="app_name">EduConex</string>
+    <string name="welcome_message">¡Bienvenido a EduConex!</string>
+    <string name="hint_username">Usuario</string>
+    <string name="hint_password">Contraseña</string>
+    <string name="button_login">Iniciar Sesión</string>
+
+    <!-- Recursos específicos para profesor -->
+    <string-array name="professor_subjects">
+        <item>Desarrollo de Aplicaciones Móviles</item>
+        <item>Diseño de Bases de Datos</item>
+        <item>Programación Avanzada</item>
+        <item>Redes y Comunicaciones</item>
+        <item>Desarrollo Web</item>
+    </string-array>
+
+</resources>

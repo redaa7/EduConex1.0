@@ -1,0 +1,55 @@
+<!-- activity_asignaturas.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/textAppNameProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewAsignaturas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asignaturas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewProfesor"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayoutAsignaturas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/textViewAsignaturas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <!-- Asignaturas se agregarán dinámicamente aquí -->
+
+    </LinearLayout>
+
+    <!-- activity_asignaturas.xml -->
+    <TableLayout
+        android:id="@+id/tableLayoutNotas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAsignaturas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+    </TableLayout>
+
+
+</RelativeLayout>

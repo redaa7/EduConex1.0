@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Agrega un id al TextView del profesor -->
+    <TextView
+        android:id="@+id/textViewProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Agrega un id al TextView del título "Asignaturas" -->
+
+    <TextView
+        android:id="@+id/textAppNameProfesor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/textViewAsignaturas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Asignaturas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textViewProfesor"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Asignaturas en forma de cajas apiladas -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/textViewAsignaturas"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"> <!-- Agregado margen superior -->
+
+        <!-- Asignatura 1 -->
+        <TextView
+            android:id="@+id/asignatura1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desarrollo de Aplicaciones Móviles"
+            android:background="#FFC107"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Asignatura 2 -->
+        <TextView
+            android:id="@+id/asignatura2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Diseño de Bases de Datos"
+            android:background="#FFC107"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Asignatura 3 -->
+        <TextView
+            android:id="@+id/asignatura3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Programación Avanzada"
+            android:background="#FFC107"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Asignatura 4 -->
+        <TextView
+            android:id="@+id/asignatura4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Redes y Comunicaciones"
+            android:background="#FFC107"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Asignatura 5 -->
+        <TextView
+            android:id="@+id/asignatura5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Desarrollo Web"
+            android:background="#FFC107"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
